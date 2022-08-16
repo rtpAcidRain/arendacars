@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru" id="html" class="no-scroll">
+  @@include('html/head.html', { "title": "Arenda Cars" })
+  <body>
+    <div class="page">
+      @@include('html/header.html') @@include('html/main.html') @@include('html/footer.html')
+    </div>
+
+    <script>
+      const carModal = document.getElementById('orderCar');
+      function openModal(event) {
+        event.preventDefault();
+        carModal.style.display = 'flex';
+        setTimeout(() => {
+          carModal.childNodes[1].style.transform = 'rotate(0)';
+        }, 10);
+      }
+    </script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

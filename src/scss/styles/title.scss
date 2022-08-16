@@ -1,0 +1,24 @@
+.title {
+  font-family: 'Futura', sans-serif;
+  font-weight: 700;
+  color: #383838;
+
+  &__section {
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.625em;
+    margin-bottom: 42px;
+    &::after {
+      content: '';
+      width: 108px;
+      height: 0.4rem;
+      position: absolute;
+      background-color: #448fff;
+      bottom: -24px;
+      border-radius: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
